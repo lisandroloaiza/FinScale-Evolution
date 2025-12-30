@@ -1,0 +1,374 @@
+Why Driven Design
+WhyDD
+Un conjunto de herramientas, técnicas metodológicas y estrategias
+para hacer diseño de arquitectura de soluciones ágil
+Hacemos uso de
+ADD
+QAW 
+Software
+architecture
+patterns
+Técnicas de
+facilitación
+de espacios
+de trabajo
+
+Why Driven Design WhyDD
+Why Driven Design es conjunto de herramientas, técnicas
+metodológicas y estrategias para hacer diseño de arquitectura de
+soluciones ágil. En este documento encontrarás un resumen de la
+metodología.
+Utiliza la siguiente leyenda para entender el contenido.
+Cuando veas este ícono es porque estamos
+enfocados en explicar la etapa metodológica sobre
+la que aparece el ícono.
+Cuando veas este ícono se trata de los
+entregables que se obtienen como resultado de
+aplicar dicha etapa metodológica.
+Cuando veas este ícono debes enconfocarte en
+comprender los conocimientos que debes
+aprender y las herramientas que puedes usar
+para ejecutar con éxito la etapa metodológica.
+escuelaarquitecturatecnologica.com
+
+Introducción general a WDD
+Why driven design se divide en 5 grandes etapas.
+1. Definición del reto de diseño: Alinear la expectativa de los stake holders
+con los entregables que debe generar el diseño de arquitectura es clave
+por eso es recomendable que se defina con claridad las preguntas que la
+arquitectura debe responder.
+2. Entender el contexto y objetivos de negocio: En esta etapa debe
+entenderse con claridad las metas que tiene la organización con el
+proyecto o producto que se va a construir, y obtener información relevante
+sobre el proceso y el alcance del sistema que se quiere implementar.
+3. Entendimiento del contexto y restricciones técnicas: Es importante
+entender los sistemas actuales y legados de la organización con el fin de
+identificar las restricciones técnicas de integración que deben tenerse en
+cuenta.
+4. Diseñar de manera colaborativa y estructurada: Definir con claridad los
+drivers de arquitectura y diseñar el sistema preferiblemente con el equipo
+que lo va a implementar es el eje central de la metodología. Esto con el fin
+de generar compromiso y claridad del equipo con el diseño para que la
+implementación refleje lo que se diseñó.
+5. Evaluar la arquitectura: El objetivo de esta etapa es verificar que el
+diseño soporte los drivers de arquitectura previo a la implementación, y
+permite tener en cuenta nuevos escenarios de implementación que deben
+contemplarse en una etapa temprana, lo cual reduce los riesgos de
+reproceso.
+
+Denición del reto de diseño
+La etapa de denición del reto de diseño proporciona la base para la planicación
+y el desarrollo posterior de la arquitectura de soluciones ayudando a establecer
+una base sólida y a preparar adecuadamente el terreno para las fases
+posteriores.
+Al nalizar esta etapa tendrás que haber ejecutado el taller de kickoff
+logrando alineación de los objetivos que debe lograr la arquitectura,
+los stake holders importantes, el alcance y los insumos que usaremos
+para desarrollar el diseño.
+En la siguiente imagen encontrarás un ejemplo de un taller de kickoff
+ejecutado
+Es muy importante que fortalezcas tus habilidades de facilitación para
+desarrollar con éxito esta etapa
+escuelaarquitecturatecnologica.com
+
+Entender el contexto y los objetivos de
+negocio
+La alineación estratégica es esencial para garantizar que cada
+componente de la arquitectura contribuya directamente a los objetivos
+empresariales.
+Al final esta etapa debes haber leído toda la
+documentación de negocio disponible para tener contexto,
+y debes haber realizado varios espacios de socialización
+para entender el negocio.
+Algunos artefactos que te pueden ser de utilidad y debes
+comprender son:
+- Documentos de modelo de negocio como business model
+canvas.
+- Value proposition canvas del producto o servicio que se va
+a construir.
+- Si se hizo un user story mapping que describa la
+funcionalidad del software o producto a construir, puedes
+usarlo para entender el contexto.
+- También puedes usar como insumo la documentación de
+los procesos de negocio o diagramas de flujo de las áreas a
+intervenir y de los productos a implementar.
+- Por último la técnica de domain story telling, podría ser de
+gran valor para tí. Esta te permite contar historias
+
+A continuación puedes ver una ejemplo del entregable generado usando
+la técnica de domain story telling
+escuelaarquitecturatecnologica.com
+
+técnico
+tecnología realizados
+Antes de aventurarse en la creación de un nuevo diseño, es imperativo
+entender y mapear la arquitectura existente de la empresa para garantizar
+la viabilidad técnica de la nueva solución.
+Entender el contexto y las restricciones
+técnicas
+Al final esta etapa debes haber leído toda la
+documentación técnica disponible para tener contexto, y
+debes haber realizado varios espacios de socialización para
+entender los sistemas de información actuales..
+Algunos artefactos que te pueden ser de utilidad y debes
+comprender son:
+- Diagramas de arquitectura actual de la empresa, pueden
+ser vistas de componentes que muestran la estructura del
+código o diagramas de integración que muestran el flujo de
+datos entre sistemas, también puede ser de utilidad hacer
+uso de diagramas de despliegue que te permitan ver los
+componentes desplegados en servidores y el flujo de datos
+a través de la red.
+- También es importante entender la arquitectura de
+referencia de la compañía (En caso de existir), pues esta
+generará restricciones importantes que debes tener en
+cuenta a la hora de diseñar.
+
+También puedes hacer uso de diagramas de contexto de los sistemas
+actuales de la organización. Un ejemplo de esto es el diagrama de
+contexto del sistema de C4Model.
+En este punto es importante que aprendas a leer diagramas
+de arquitectura ya sea usando técnicas como C4Model, UML
+Archimate o lenguajes informales de arquitectura
+escuelaarquitecturatecnologica.com
+
+Ahora que has alineado el reto de diseño, has entendido el contexto y los
+objetivos de negocio y has alineado las restricciones técnicas, es hora de
+diseñar. Para hacerlo debe pasar por 3 actividades clave.
+Diseñar de manera colaborativa y
+estructurada.
+1. Definir los drivers de arquitectura: Los drivers de arquitectura son
+aquellos elementos que guiarán las decisiones de diseño. Incluyen: El
+propósito de diseño, Los requerimientos funcionales más
+significativas, los atributos de calidad, los architectural concerns, y
+las restricciones técnicas y de negocio
+2. Hacer el diseño estratégico: El diseño estratégico permite
+descomponer el sistema en subsistemas teniendo en cuenta los
+dominios de negocio, la estructura organizacional, la estrategia de
+implementación y la manera en que se definirán los equipos de
+desarrollo. En este punto hacemos uso de prácticas de domain
+driven design y arquitectura empresarial
+3. Hacer el diseño técnico: El diseño técnico define la descomposición
+de cada sub sistema en componentes técnicos que permitan lograr
+los atributos de calidad esperados, aquí hacemos uso de atribute
+driven design y estilos, patrones y tácticas de arquitectura.
+
+Para definir los drivers de arquitectura te recomiendo realizar un taller con
+todos los stake holders.
+Este taller consta de 5 actividades clave.
+1.Establecer la visión y alcance del proyecto/sistema/producto
+2. Alinear las funcionalidades clave y elegir las funcionalidades arquitectónicamente
+significativas.
+3. Seleccionar y priorizar los atributos de calidad que son relevantes para el sistema,
+así como los escenarios de atributos de calidad.
+4. Definir los architectural concerns, aquellas preocupaciones que los diferentes
+actores tienen sobre la arquitectura, de modo que se tengan en cuenta durante el
+diseño.
+5. Finalmente se establecen las restricciones técnicas y de negocio. Muchas de ellas
+se identificaron en las etapas anteriores, pero este espacio es ideal para validarlas y
+complementarlas.
+Definir los drivers de arquitectura
+escuelaarquitecturatecnologica.com
+
+1. Descubrir el dominio. El objetivo es que los expertos del dominio
+socialicen su conocimiento con todo el equipo de desarrollo para
+crear un entendimiento compartido del problema. Usualmente
+puedes crear un diagrama de modelo de dominio en esta etapa.
+El diseño estratégico se divide en 4 grandes actividades:
+Realizar el diseño estratégico.
+
+2. Descomponer el dominio en sub dominios poco acoplados entre sí
+para:
+A. Reducir la carga cognitiva, y así poder razonar sobre partes del
+dominio de forma independiente.
+B. Dar autonomía a los equipos de desarrollo, para que puedan
+trabajar en partes separadas de la solución.
+C. Identificar puntos de alta cohesión y bajo acoplamiento en el
+dominio, que se trasladan a nuestra arquitectura de software y
+estructura de equipos.
+Para esto puedes hacer uso de la técnica de bounded contexts de
+DDD.
+escuelaarquitecturatecnologica.com
+
+3. Clasificar el dominio: Para identificar los dominios principales,
+aquellos que entregan mayor diferencial al negocio o generan un
+mayor valor estratégico.
+El tiempo y los recursos son limitados, por lo que comprender en qué
+partes del dominio centrarse es fundamental para lograr un impacto
+óptimo en la implementación y decidir la estrategia de
+implementación idónea, ya sea comprar el software, hacerlo a la
+medida o sub contratarlo.
+Para esto puedes hacer
+uso de la técnica de core
+domain charts.
+
+También es muy
+importante que
+conozcas la
+técnica de
+context
+mapping.
+4. Conectar los sub dominios: Debes identificar cual es el mejor
+patrón de comunicación para conectar los sub dominios con un bajo
+acoplamiento. EL objetivo final es identificar áreas de trabajo que te
+permitan conformar equipos al rededor de capacidades de negocio,
+que puedan hacer delivery con autonomía.
+Para hacerlo de una manera correcta debes conocer los diferentes
+tipos de comunicación entre sub dominios: Open Host Service,
+Conformist, Shared Kernel, Anti corruption layer, Customer suplier,
+Partnership
+escuelaarquitecturatecnologica.com
+
+El diseño técnico tiene propósito llevar los sub dominios a componentes
+técnicos que puedan ser implementados por los equipos de desarrollo. se
+divide en 4 grandes actividades:
+Realizar el diseño técnico.
+1 2
+3
+4
+1. Selecciona un dominio core e identifique los drivers de arquitectura.
+El objetivo de esta actividad es reducir la sobrecarga cognitiva y
+enfocar el diseño en una parte del sistema a la vez.
+2. Selecciona los arquetipos, estilos, patrones y tácticas de
+arquitectura que satisfagan los drivers de arquitectura
+seleccionados para ese sub dominio.
+3. Divide el sistema en componentes teniendo en cuenta lo que
+establece cada estilo, patrón y táctica seleccionado.
+4. Haz la instanciación tecnológica para cada componente, esto
+significa definir el lenguaje de programación, framework, plataforma
+de despliegue y cualquier otra decisión técnica relevante para el
+equipo de desarrollo.
+Para desarrollar esta etapa necesitas:
+A. Conocer la metodología de attribute driven design.
+B. Tener conocimientos de algunos arquetipos de arquitectura cómo:
+Mobile application archetype, rich client application archetype, rich
+internet application archetype, service archetype, web app
+archetype, progresive web app archetype, IOT Apps archetype, big
+data archetype. Con el fin de identificar los idóneos para el reto de
+diseño que estás enfrentando.
+
+Al finalizar esta etapa debes tener las vistas de arquitectura técnica
+que establezcan con claridad qué componentes deben
+implementarse para lograr los atributos de calidad en el sub dominio
+C. Tener conocimientos de algunos estilos de arquitectura cómo:
+Clean architectures, Microservices, Event driven, Monolithic
+architecture, Modular monolith architecture, SOA, N-Layers, ETL, N-
+Tiers, serverless, complex event processing, rules based, stream event
+processing.
+D. Tener conocimientos de algunos patrones de arquitectura cómo:
+Pipes and filters, Micro integrators, Web queue Worker, Active record,
+Hexagonal architecture, onion architecture, CQRS, MVC, Publish
+suscribe, P2P, API Gateway.
+E. Tener conocimientos en algunas tácticas de arquitectura cómo:
+Service discovery, change data capture, Backend for front end, circuit
+breaker, backpressure, Health check API, Throotling, Load balancing,
+redundancy, materialized view, Caché, SAGA, Retry, Priority queue,
+Queue based load leveling.
+F. Tener conocimientos de lenguajes de programación, frameworks,
+tecnologías cloud computing, así cómo servicios de nube para
+desplegar los componentes.
+escuelaarquitecturatecnologica.com
+
+Evaluar la arquitectura
+Evaluar la arquitectura es un paso muy importante porque refuerza la
+alineación del diseño con las expectativas del negocio, en este espacio el
+arquitecto presenta la arquitectura a la audiencia, y justifica cómo esta
+resuelve los drivers de arquitectura. Acto seguido la audiencia puede retar
+la arquitectura generando escenarios técnicos o de negocio que el diseño
+debe soportar.
+En esta etapa te puede ser de utilidad conocer la técnica ATAM
+Architecture tradeoff analysis method. Sin embargo debes adaptarla
+para tener un enfoque más ágil y dinámico.
+
+Genera el entendimiento
+para
+Domain story telling
+Hace uso de
+Genera contexto
+para identificar
+Diagrama de contexto
+del sistema.
+Artefactos de diseño de
+producto/Negocio
+Diagramas de
+arquitectura actual y de
+referencia.
+C4 Model
+Identificados a través
+Drivers de
+arquitectura
+Construir
+Construir
+Se descompone en
+Diagrama de
+modelo de
+dominio. 
+Para lograr
+Sub dominios /
+Bounded contexts
+Identificados
+a través de
+Para
+Sub dominios
+Core/Genérico/ de
+soporte
+Se clasifica en
+Core domain
+charts
+A través de
+Entendimiento de
+negocio
+A través de
+Entendimiento
+técnico
+Taller de drivers
+de arquitectura
+Para lograr
+Es el insumo principal
+para hacer
+Context maping
+Haciendo uso de
+Interconexión
+debilmente
+acoplada entre sub
+sistemas
+Equipos enfocados en
+habilitar capacidades
+con independencia.
+Planear la
+estrategía de
+implementación
+Inicia por
+aqui
+Es el prerrequisito para hacer
+Diseño estratégico
+Hace uso de
+Diseño técnico
+Permite planear el
+proyecto y alinear
+expectativas para realizar
+A través de
+Definición del reto
+de diseño
+Taller de kick off
+Es validado a través de
+Diseño
+colaborativo y
+estructurado
+Dan vida al
+Arquetipos, estilos,
+patrones, tácticas de
+arquitectura
+Evaluación de
+arquitectura
+Resumen metodológico
+
+En nuestros 20 años de experiencia haciendo arquitectura, continuamos
+evidenciando la importancia de esta práctica como un habilitador para
+generar conexión entre negocio y tecnología.
+Why driven design es el resultado de articular y evolucionar una serie de
+prácticas metodológicas y herramientas prácticas haciendo arquitectura
+en la industria que habiliten el diseño de arquitectura de manera
+colaborativa, estructurada y ágil.
+Si quieres conocer más te invitamos a ser parte de nuestra escuela de
+arquitectura tecnológica.
