@@ -2,8 +2,6 @@
 
 > **Metodología**: Why Driven Design (WhyDD) - 6 Fases de Análisis Estratégico y Técnico  
 > **Objetivo**: Escalar de 2K TPS → 1M TPS | 99.5% → 99.999% disponibilidad | Time-to-Market de 4 meses → 2 semanas
-> **Metodología**: Why Driven Design (WhyDD) - 6 Fases de Análisis Estratégico y Técnico  
-> **Objetivo**: Escalar de 2K TPS → 1M TPS | 99.5% → 99.999% disponibilidad | Time-to-Market de 4 meses → 2 semanas
 
 ---
 
