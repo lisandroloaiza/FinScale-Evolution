@@ -32,8 +32,6 @@ Este diagrama muestra la arquitectura de despliegue propuesta para **FinScale Ev
 
 ## 📐 Diagrama UML de Despliegue
 
-## 📐 Diagrama UML de Despliegue
-
 ```mermaid
 ---
 config:
