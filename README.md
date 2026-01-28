@@ -13,7 +13,6 @@
 - [Decisiones Clave](#decisiones-clave)
 - [Stack Tecnológico](#stack-tecnológico)
 - [Equipos y Organización](#equipos-y-organización)
-- [Cómo Leer esta Documentación](#cómo-leer-esta-documentación)
 
 ---
 
