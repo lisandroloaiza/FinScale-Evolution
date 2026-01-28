@@ -23,7 +23,7 @@
 
 ### Sistema Actual (AS-IS)
 - **Monolito J2EE**: 1.2M líneas de código Java 8
-- **Base de Datos**: Oracle 11g centralizada (shared database pattern)
+- **Base de Datos**: Oracle centralizada (shared database pattern)
 - **Lógica de Negocio**: 40% en stored procedures PL/SQL
 - **Capacidad**: 2,000 TPS máximo
 - **Disponibilidad**: 99.5% (43.8h downtime/año)
